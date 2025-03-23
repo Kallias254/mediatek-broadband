@@ -1,0 +1,55 @@
+.site-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+
+  .logo-img {
+    width: 100px; /* Adjusted for better fit */
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .logo-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333; /* Adjust color as needed */
+    white-space: nowrap;
+  }
+
+  .site-menu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .site-menu li {
+    margin-left: 20px;
+  }
+
+  .site-menu li:first-child {
+    margin-left: 0;
+  }
+
+  .cta-primary {
+    margin-left: 20px;
+  }
+
+    @media (max-width: 991px) {
+    .site-navigation {
+      flex-wrap: wrap;
+    }
+    
+    /* .logo-container {
+      margin-bottom: 10px;
+    } */
+  }

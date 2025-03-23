@@ -1,0 +1,39 @@
+{
+  "title": "Pricing",
+  "description": "Flexible Plans to Fit Your Lifestyle. Choose your plan now!",
+  "plans": [
+    {
+      "name": "10 Mbps",
+      "price": "1500",
+      "features": [
+        "Perfect for basic internet browsing and streaming.",
+        "Browse the web smoothly",
+        "Stream videos on YouTube and social media platforms.",
+        "Enjoy video calls with friends and family."
+      ],
+      "cta": "Get Started"
+    },
+    {
+      "name": "15 Mbps",
+      "price": "2000",
+      "features": [
+        "Ideal for families with multiple devices.",
+        "Connect several devices without compromising speed.",
+        "Stream HD content on platforms like Netflix and Hulu without interruptions.",
+        "Enjoy playing online games with minimal lag."
+      ],
+      "cta": "Get Started"
+    },
+    {
+      "name": "20 Mbps",
+      "price": "3000",
+      "features": [
+        "For those who need the best in speed and connectivity.",
+        "Ultra-fast speeds for seamless 4K streaming.",
+        "Enjoy online gaming with zero interruptions. Perfect for video content creators and streamers."
+      ],
+      "cta": "Get Started"
+    }
+  ],
+  "subtitle": "ok"
+}

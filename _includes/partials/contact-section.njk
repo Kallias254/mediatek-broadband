@@ -1,0 +1,61 @@
+<div class="untree_co-section bg-light" id="contact-section">
+  <div class="container">
+    <div class="row mb-5" data-aos="fade-up" data-aos-delay="0">
+      <div class="col-12 text-center">
+        <span class="caption">{{ contact.title }}</span>
+        <h2 class="heading">{{ contact.subtitle }}</h2>
+        <p>{{ contact.description }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-7">
+        <form class="contact-form" data-aos="fade-up" data-aos-delay="100" name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact">
+          <div class="row">
+            <div class="col-6">
+              <div class="form-group">
+                <label class="" for="fname">First name</label>
+                <input type="text" class="form-control" id="fname" name="fname">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label class="" for="lname">Last name</label>
+                <input type="text" class="form-control" id="lname" name="lname">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="form-group">
+                <label class="" for="location">Location</label>
+                <input type="text" class="form-control" id="location" name="location" required>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label class="" for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]*" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="" for="message">Message</label>
+            <textarea name="message" class="form-control" id="message" cols="30" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      <div class="col-lg-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
+        <div class="quick-contact">
+          <h3 class="h5 mb-4">Contact Info</h3>
+          <address class="text-black d-flex"><span class="mt-1 icon-room mr-2"></span><span>{{ contact.address }}</span></address>
+          <ul class="list-unstyled ul-links mb-4">
+            <li><a href="tel:{{ contact.phone1 }}" class="d-flex"><span class="mt-1 icon-phone mr-2"></span><span>{{ contact.phone1 }}</span></a></li>
+            <li><a href="mailto:{{ contact.email }}" class="d-flex"><span class="mt-1 icon-envelope mr-2"></span><span>{{ contact.email }}</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

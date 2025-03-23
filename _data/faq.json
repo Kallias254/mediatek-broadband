@@ -1,0 +1,74 @@
+{
+  "title": "Frequently Asked Questions",
+  "description": "Have Questions? We’ve Got Answers!",
+  "faqs": [
+    {
+      "question": "How can I check my internet usage?",
+      "answer": "Log in to your client dashboard to view real-time data usage and manage your plan effortlessly. Our intuitive interface makes it easy to stay informed about your internet consumption."
+    },
+    {
+      "question": "How do I pay my bill?",
+      "answer": "1. Go to your M-Pesa Menu.\n2. Select Lipa na Mpesa.\n3. Choose Paybill**.**\n4. Enter 4092411 as the Paybill number.\n5. Enter your registered phone number as the account number. e.g. 0700 000 000.\n6. Enter the amount and your M-Pesa PIN, then send."
+    },
+    {
+      "question": "What happens if I pay for my subscription using a different number?",
+      "answer": "If you use a different number, contact our support team. Provide the payment message and your registered account number. We will manually update your account."
+    },
+    {
+      "question": "How do I access the Selfcare portal?",
+      "answer": "1. Visit (https://mediatek.ispkenya.co.ke/user/).\n2. Enter your registered phone number as both your User ID and Password."
+    },
+    {
+      "question": "How do I change my password?",
+      "answer": "Contact our support team with the new password you want to set. We will update your password within 24 hours."
+    },
+    {
+      "question": "Why is my internet slow?",
+      "answer": "1. Check your current speed using (https://www.fast.com).\n2. Ensure no other devices are downloading large files or streaming.\n3. Restart your router and try connecting again.\n4. If the issue persists, contact our support team for assistance."
+    },
+    {
+      "question": "Can I suspend my services while I'm out of town?",
+      "answer": "Yes, you can temporarily pause your service. Contact our support team to arrange a suspension and avoid unnecessary charges."
+    },
+    {
+      "question": "I am moving to a new location, can I take my connection with me?",
+      "answer": "Yes, you can transfer your connection. Contact our support team to schedule a relocation service. Note: Relocation fees may apply."
+    },
+    {
+      "question": "How do I place an order for your service?",
+      "answer": "Call our sales team or visit one of our local offices."
+    },
+    {
+      "question": "Why do I have no internet?",
+      "answer": "1. Check if all cables are securely connected.\n2. Restart your router.\n3. Verify that your account is active by logging into the Selfcare portal.\n4. Contact support if the problem continues."
+    },
+    {
+      "question": "Are you offering any job opportunities?",
+      "answer": "Visit our careers page on the website for current job openings. Submit your application via the contact form provided."
+    },
+    {
+      "question": "How can I improve my Wi-Fi signal?",
+      "answer": "Place your router in a central location, away from obstructions. Ensure your router firmware is up to date. Limit the number of connected devices during high-traffic periods."
+    },
+    {
+      "question": "Where’s the best location for my Internet router?",
+      "answer": "Place your router in an open area, preferably in the center of your home. Avoid placing it near large metal objects or electronics that could cause interference."
+    },
+    {
+      "question": "What is my current internet speed, and how do I find out?",
+      "answer": "Check your speed by visiting (https://www.fast.com) or on the Selfcare portal."
+    },
+    {
+      "question": "Can I change my subscription package?",
+      "answer": "Yes, you can change your package at any time. Contact our support team or use the Selfcare portal to make the change."
+    },
+    {
+      "question": "What are the reasons for rebooting my device?",
+      "answer": "Rebooting can resolve connectivity issues and refresh your connection. It's recommended to reboot your router at least once a month for optimal performance."
+    },
+    {
+      "question": "How do I raise a Ticket for support?",
+      "answer": "1. Log onto (https://mediatek.ispkenya.co.ke/user/).\n2. Go to the \"Help & Support\" section.\n3. Click on \"Create Ticket\" and fill out the necessary details.\n4. Submit the ticket, and our support team will respond promptly."
+    }
+  ]
+}

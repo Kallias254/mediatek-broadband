@@ -1,0 +1,28 @@
+{# <div class="untree_co-section" id="features-section">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-4">
+          <span class="caption" data-aos="fade-up" data-aos-delay="0">{{ digitalServices.title }}</span>
+          <h3 class="heading mb-4" data-aos="fade-up" data-aos-delay="100">{{ digitalServices.subtitle }}</h3>
+          <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+            <p>{{ digitalServices.description }}</p>  
+            <ul class="list-unstyled ul-check primary">
+              {% for feature in digitalServices.features %}
+                <li>{{ feature }}</li>
+              {% endfor %}
+            </ul>
+          </div> <!-- /.mb-4 -->
+        </div>
+        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="400">
+          <a href="{{ digitalServices.videoUrl }}" class="btn-video" data-fancybox>
+            <span class="wrap-icon-play">
+              <svg class="bi bi-play-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+              </svg>
+            </span>
+            <img src="{{ digitalServices.videoImage }}" alt="Image" class="img-fluid img-shadow">
+          </a>
+        </div> <!-- /.col-md-4 -->
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+  </div> <!-- /.untree_co-section --> #}

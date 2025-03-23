@@ -1,0 +1,30 @@
+<div class="untree_co-section bg-light" id="faq-section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="0">
+        <h2 class="heading">{{ faq.title }}</h2>
+        <p>{{ faq.description }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10 mx-auto" data-aos="fade-up" data-aos-delay="100">
+        <div class="custom-accordion" id="faqAccordion">
+          {% for faqItem in faq.faqs %}
+            <div class="accordion-item">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{ loop.index }}" aria-expanded="false" aria-controls="collapse{{ loop.index }}">
+                  {{ faqItem.question }}
+                </button>
+              </h2>
+              <div id="collapse{{ loop.index }}" class="collapse" aria-labelledby="heading{{ loop.index }}" data-parent="#faqAccordion">
+                <div class="accordion-body">
+                  {{ faqItem.answer }}
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

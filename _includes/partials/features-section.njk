@@ -1,0 +1,28 @@
+<div class="untree_co-section" id="features-section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="0">
+        <h2 class="heading">{{ features.title }}</h2>
+      </div>
+    </div> <!-- /.row -->
+
+    <div class="row">
+      {% for feature in features.features %}
+        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="{{ loop.index * 100 }}">
+          <div class="service horizontal d-flex">
+            <div class="service-icon color-{{ (loop.index0 % 4) + 1 }} mb-4">
+              <svg class="{{ feature.icon }}" width="1em" height="1em" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="{{ feature.icon }}"></path>
+              </svg>
+            </div> <!-- /.icon -->
+            <div class="service-contents">
+              <h3>{{ feature.title }}</h3>
+              <p>{{ feature.description }}</p>  
+              {# <p><a href="#" class="read-more">Learn More</a></p> #}
+            </div> <!-- /.service-contents-->
+          </div> <!-- /.service -->
+        </div>
+      {% endfor %}
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
+</div> <!-- /.untree_co-section -->

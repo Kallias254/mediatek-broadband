@@ -1,0 +1,24 @@
+{
+  "title": "Our Services",
+  "description": "Comprehensive Internet Solutions for Everyone",
+  "services": [
+    {
+      "icon": "bi bi-app-indicator",
+      "title": "Stream Movies and Shows",
+      "description": "Enjoy your favorite movies and TV shows on platforms like Netflix and Hulu with our high-speed internet."
+    },
+    {
+      "icon": "bi bi-arrow-repeat",
+      "title": "Gaming",
+      "description": "Dive into online gaming with minimal lag and seamless performance, whether you’re on a console or PC."
+    },
+    {
+      "icon": "bi bi-briefcase",
+      "title": "Social Media Browsing",
+      "description": "Stay connected with friends and trends on TikTok, Instagram, and Facebook with our reliable service."
+    }
+  ],
+  "carouselImages": [
+    "/images/dashboard1.jpg"
+  ]
+}

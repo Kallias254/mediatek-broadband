@@ -1,0 +1,26 @@
+{
+  "title": "Benefits of Our Internet Services",
+  "description": "Unlock the Power of Reliable Internet",
+  "features": [
+    {
+      "icon": "bi bi-shield-check",
+      "title": "24/7 Customer Support",
+      "description": "Our dedicated support team is always here for you, ready to tackle any challenges you face. Our experts are just a call away, providing swift, friendly assistance to resolve your issues and ensure your internet experience remains flawless."
+    },
+    {
+      "icon": "bi bi-shield-check",
+      "title": "Effortless Streaming",
+      "description": "Enjoy uninterrupted streaming of your favorite movies and shows in stunning clarity. Our reliable internet ensures that you can binge-watch without buffering, offering a cinematic experience right in your living room."
+    },
+    {
+      "icon": "bi bi-router",
+      "title": "Flexible Plan Management",
+      "description": "Take control of your internet plan with our easy-to-use management tools. Adjust your settings, monitor usage, and optimize your plan to fit your lifestyle—all from a convenient, user-friendly dashboard."
+    },
+    {
+      "icon": "bi bi-cloud-arrow-down",
+      "title": "Whole-Home Coverage",
+      "description": "Experience consistent, powerful Wi-Fi in every room. Whether you're upstairs or in the backyard, our service ensures you have the coverage needed to stay connected seamlessly throughout your entire home."
+    }
+  ]
+}

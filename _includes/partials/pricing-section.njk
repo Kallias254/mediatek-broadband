@@ -1,0 +1,36 @@
+<div class="untree_co-section bg-light" id="pricing-section">
+    <div class="container">
+      <div class="row pricing-title">
+        <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="0">
+          <h2 class="heading">{{ pricing.title }}</h2>
+          <p>{{ pricing.description }}</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="row">
+            {% for plan in pricing.plans %}
+              <div class="col-lg-4" data-aos="fade-up" data-aos-delay="{{ loop.index * 100 }}">
+                <div class="pricing {% if loop.index == 2 %}active{% endif %}">
+                  <div class="body">
+                    <div class="price">
+                      <span class="price"><sup>KES</sup><span>{{ plan.price }}</span></span>
+                      <span class="d-block plan mb-4">{{ plan.name }}</span>
+                    </div>
+                    <ul class="list-unstyled ul-check primary mb-5">
+                      {% for feature in plan.features %}
+                        <li>{{ feature }}</li>
+                      {% endfor %}
+                    </ul>
+                    <p class="text-center mb-0"><a href="#contact-section" class="btn {% if loop.index == 2 %}btn-primary{% else %}btn-outline-primary{% endif %}">{{ plan.cta }}</a></p>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,25 @@
+{
+  "title": "Digital Services",
+  "subtitle": "A complete solution for your business website.",
+  "description": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+  "features": [
+    "There live the blind texts",
+    "Far far away behind the word"
+  ],
+  "videoUrl": "https://vimeo.com/342333493",
+  "videoImage": "/images/kilyan-sockalingum-nw1n9enhosc-unsplash-3-.jpg",
+  "testimonials": [
+    {
+      "name": "Cameron Fisher",
+      "position": "Facebook, Product Lead",
+      "quote": "Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      "image": "/images/person_1.jpg"
+    },
+    {
+      "name": "Jenny Wilson",
+      "position": "Facebook, Product Lead",
+      "quote": "Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      "image": "/images/person_2.jpg"
+    }
+  ]
+}

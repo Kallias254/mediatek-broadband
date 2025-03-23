@@ -1,0 +1,74 @@
+{
+  "about": {
+    "title": "About",
+    "description": "MEDIATEK Broadband offers reliable high-speed internet services, ensuring you stay connected wherever you are. Our dedicated customer support and advanced technology provide you with the best online experience."
+  },
+  "socials": [
+    {
+      "icon": "icon-instagram",
+      "url": "https://www.instagram.com"
+    },
+    {
+      "icon": "icon-twitter",
+      "url": "https://www.twitter.com"
+    },
+    {
+      "icon": "icon-linkedin",
+      "url": "https://www.linkedin.com"
+    },
+    {
+      "icon": "icon-whatsapp",
+      "url": "https://www.whatsapp.com"
+    }
+  ],
+  "navigation": [
+    {
+      "label": "Home",
+      "link": "#home-section"
+    },
+    {
+      "label": "Services",
+      "link": "#services-section"
+    },
+    {
+      "label": "Features",
+      "link": "#features-section"
+    },
+    {
+      "label": "Pricing",
+      "link": "#pricing-section"
+    },
+    {
+      "label": "About",
+      "link": "#about-section"
+    },
+    {
+      "label": "Contact",
+      "link": "#contact-section"
+    }
+  ],
+  "services": [
+    {
+      "label": "Stream Movies and Shows",
+      "link": "#services-section"
+    },
+    {
+      "label": "Gaming",
+      "link": "#services-section"
+    },
+    {
+      "label": "Social Media Browsing",
+      "link": "#services-section"
+    }
+  ],
+  "contact": {
+    "address": "TSS Tower Mombasa,Kenya",
+    "phone": "+254 780 053 271",
+    "email": "info@mediatekbroadband.com"
+  },
+  "footerNote": {
+    "note": " Copyright Mediatek Africa. All Rights Reserved",
+    "linkText": "Mediatek Africa",
+    "link": "https://mediatekbroadband.com"
+  }
+}

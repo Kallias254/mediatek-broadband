@@ -1,0 +1,64 @@
+<div class="site-footer">
+    <div class="footer-dots"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="widget">
+                    <h3>{{ footer.about.title }}<span class="text-primary">.</span></h3>
+                    <p>{{ footer.about.description }}</p>
+                </div>
+                <div class="widget">
+                    <h3>Follow Us</h3>
+                    <ul class="list-unstyled social">
+                        {% for social in footer.socials %}
+                        <li><a href="{{ social.url }}"><span class="{{ social.icon }}"></span></a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+  
+            <div class="col-lg-2 ml-auto">
+                <div class="widget">
+                    <h3>Navigation</h3>
+                    <ul class="list-unstyled float-left links">
+                        {% for nav in footer.navigation %}
+                        <li><a href="{{ nav.link }}">{{ nav.label }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+  
+            <div class="col-lg-2">
+                <div class="widget">
+                    <h3>Services</h3>
+                    <ul class="list-unstyled float-left links">
+                        {% for service in footer.services %}
+                        <li><a href="{{ service.link }}">{{ service.label }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+  
+            <div class="col-lg-3">
+                <div class="widget">
+                    <h3>Contact Us</h3>
+                    <address>{{ footer.contact.address }}</address>
+                    <ul class="list-unstyled links mb-4">
+                        <li><a href="tel://{{ footer.contact.phone }}">{{ footer.contact.phone }}</a></li>
+                        <li><a href="mailto:{{ footer.contact.email }}">{{ footer.contact.email }}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+  
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <p class="copyright">
+                    &copy; <script>document.write(new Date().getFullYear());</script> {{ footer.footerNote.note }} 
+                    <a target="_blank" href="{{ footer.footerNote.link }}">{{ footer.footerNote.linkText }}</a>
+                </p>
+            </div>
+        </div>
+    </div>
+  </div>
+  

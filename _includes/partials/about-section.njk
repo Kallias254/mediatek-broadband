@@ -1,0 +1,34 @@
+<div class="untree_co-section" id="about-section">
+    <div class="container">
+      <div class="row justify-content-between mb-5">
+        <div class="col-lg-8 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <img src="{{ about.image }}" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-lg-4">
+          <div class="mb-4" data-aos="fade-up" data-aos-delay="0">
+            <span class="caption">About Us</span>
+            <h2 class="heading">{{ about.title }}</h2>
+          </div>
+          <div class="mb-4" data-aos="fade-up" data-aos-delay="100">
+            <p>{{ about.description }}</p>
+          </div>
+          <ul class="list-unstyled ul-check primary mb-4" data-aos="fade-up" data-aos-delay="200">
+            {% for item in about.features %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+          <div class="row count-numbers">
+            <div class="col-6 col-lg-6" data-aos="fade-up" data-aos-delay="0">
+              <span class="counter d-block"><span data-number="{{ about.membersCount }}">0</span><span>+</span></span>
+              <span class="caption-2">Happy Customers</span>
+            </div>
+            <div class="col-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <span class="counter d-block"><span data-number="{{ about.teamCount }}">0</span></span>
+              <span class="caption-2">Team Members</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>

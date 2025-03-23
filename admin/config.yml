@@ -1,0 +1,367 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "about"
+    label: "About"
+    files:
+      - name: "about"
+        file: "_data/about.json"
+        label: "About"
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "description", label: "Description", widget: "markdown" }
+          - { name: "features", label: "Features", widget: "list" }
+          - { name: "image", label: "Image", widget: "image" }
+          - { name: "membersCount", label: "Members Count", widget: "number" }
+          - { name: "teamCount", label: "Team Count", widget: "number" }
+
+  - name: "contact"
+    label: "Contact"
+    files:
+      - name: "contact"
+        file: "_data/contact.json"
+        label: "Contact"
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "subtitle", label: "Subtitle", widget: "string" }
+          - { name: "description", label: "Description", widget: "markdown" }
+          - { name: "address", label: "Address", widget: "string" }
+          - { name: "phone1", label: "Phone 1", widget: "string" }
+          - { name: "phone2", label: "Phone 2", widget: "string" }
+          - { name: "email", label: "Email", widget: "string" }
+          - { name: "website", label: "Website", widget: "string" }
+
+  - name: "coverage"
+    label: "Coverage Areas"
+    files:
+      - name: "coverage"
+        file: "_data/coverage.json"
+        label: "Coverage"
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "description", label: "Description", widget: "markdown" }
+          - { name: "areas", label: "Areas", widget: "list" }
+          - { name: "image", label: "Image", widget: "image" }
+
+  - name: "digitalservices"
+    label: "Digital Services"
+    files:
+      - name: "digitalservices"
+        file: "_data/digitalServices.json"
+        label: "Digital Services"
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "subtitle", label: "Subtitle", widget: "string" }
+          - { name: "description", label: "Description", widget: "markdown" }
+          - { name: "features", label: "Features", widget: "list" }
+          - { name: "videoUrl", label: "Video URL", widget: "string" }
+          - { name: "videoImage", label: "Video Image", widget: "image" }
+          - name: "testimonials"
+            label: "Testimonials"
+            widget: "list"
+            fields:
+              - { name: "name", label: "Name", widget: "string" }
+              - { name: "position", label: "Position", widget: "string" }
+              - { name: "quote", label: "Quote", widget: "markdown" }
+              - { name: "image", label: "Image", widget: "image" }
+
+  - name: "faq"
+    label: "FAQ"
+    files:
+      - name: "faq"
+        file: "_data/faq.json"
+        label: "FAQ"
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "description", label: "Description", widget: "markdown" }
+          - name: "faqs"
+            label: "FAQs"
+            widget: "list"
+            fields:
+              - { name: "question", label: "Question", widget: "string" }
+              - { name: "answer", label: "Answer", widget: "markdown" }
+
+  - name: "features"
+    label: "Features"
+    files:
+      - name: "features"
+        file: "_data/features.json"
+        label: "Features"
+        fields:
+          - name: "title"
+            label: "Title"
+            widget: "string"
+          - name: "description"
+            label: "Description"
+            widget: "markdown"
+          - name: "features"
+            label: "Features"
+            widget: "list"
+            fields:
+              - name: "icon"
+                label: "Icon"
+                widget: "string"
+                hint: "Use classes from Bootstrap Icons (e.g., 'bi bi-speedometer2'). Reference: https://icons.getbootstrap.com/"
+              - name: "title"
+                label: "Feature Title"
+                widget: "string"
+              - name: "description"
+                label: "Description"
+                widget: "markdown"
+
+  - name: "home"
+    label: "Home"
+    files:
+      - name: "home"
+        file: "_data/home.json"
+        label: "Home"
+        fields:
+          - { name: "title", label: "Title" }
+          - { name: "subtitle", label: "Subtitle" }
+          - { name: "description", label: "Description", widget: "markdown" }
+          - { name: "ctaPrimary", label: "Primary CTA" }
+          - { name: "ctaSecondary", label: "Secondary CTA" }
+          - { name: "image", label: "Image", widget: "image" }
+
+  - name: "morefeatures"
+    label: "More Features"
+    files:
+      - name: "morefeatures"
+        file: "_data/moreFeatures.json"
+        label: "More Features"
+        fields:
+          - name: "title"
+            label: "Title"
+            widget: "string"
+          - name: "description"
+            label: "Description"
+            widget: "markdown"
+          - name: "features"
+            label: "Features"
+            widget: "list"
+            fields:
+              - name: "icon"
+                label: "Icon"
+                widget: "string"
+                hint: "Use classes from Bootstrap Icons (e.g., 'bi bi-speedometer2'). Reference: https://icons.getbootstrap.com/"
+              - name: "title"
+                label: "Feature Title"
+                widget: "string"
+              - name: "description"
+                label: "Description"
+                widget: "markdown"
+
+  - name: "pricing"
+    label: "Pricing"
+    files:
+      - name: "pricing"
+        file: "_data/pricing.json"
+        label: "Pricing"
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "subtitle", label: "Subtitle", widget: "string" }
+          - { name: "description", label: "Description", widget: "markdown" }
+          - name: "plans"
+            label: "Plans"
+            widget: "list"
+            fields:
+              - { name: "name", label: "Plan Name", widget: "string" }
+              - { name: "price", label: "Price", widget: "string" }
+              - { name: "features", label: "Features", widget: "list" }
+              - { name: "cta", label: "Call to Action", widget: "string" }
+
+  - name: "services"
+    label: "Services"
+    files:
+      - name: "services"
+        file: "_data/services.json"
+        label: "Services"
+        fields:
+          - name: "title"
+            label: "Title"
+            widget: "string"
+          - name: "description"
+            label: "Description"
+            widget: "markdown"
+          - name: "services"
+            label: "Services"
+            widget: "list"
+            fields:
+              - name: "icon"
+                label: "Icon"
+                widget: "string"
+                hint: "Use classes from Bootstrap Icons (e.g., 'bi bi-speedometer2'). Reference: https://icons.getbootstrap.com/"
+              - name: "title"
+                label: "Service Title"
+                widget: "string"
+              - name: "description"
+                label: "Description"
+                widget: "markdown"
+          - name: "carouselImages"
+            label: "Carousel Images"
+            widget: "list"
+            fields:
+              - name: "image"
+                label: "Image"
+                widget: "image"
+                hint: "Upload images for the service carousel"
+
+  - name: "team"
+    label: "Team"
+    files:
+      - name: "team"
+        file: "_data/team.json"
+        label: "Team"
+        fields:
+          - name: "title"
+            label: "Title"
+            widget: "string"
+          - name: "description"
+            label: "Description"
+            widget: "markdown"
+          - name: "members"
+            label: "Team Members"
+            widget: "list"
+            fields:
+              - name: "name"
+                label: "Name"
+                widget: "string"
+              - name: "position"
+                label: "Position"
+                widget: "string"
+              - name: "description"
+                label: "Description"
+                widget: "markdown"
+              - name: "image"
+                label: "Image"
+                widget: "image"
+              - name: "socials"
+                label: "Social Media"
+                widget: "object"
+                fields:
+                  - {
+                      name: "facebook",
+                      label: "Facebook",
+                      widget: "string",
+                      required: false,
+                    }
+                  - {
+                      name: "twitter",
+                      label: "Twitter",
+                      widget: "string",
+                      required: false,
+                    }
+                  - {
+                      name: "linkedin",
+                      label: "LinkedIn",
+                      widget: "string",
+                      required: false,
+                    }
+                  - {
+                      name: "instagram",
+                      label: "Instagram",
+                      widget: "string",
+                      required: false,
+                    }
+
+  - name: "testimonials"
+    label: "Testimonials"
+    files:
+      - name: "testimonials"
+        file: "_data/testimonials.json"
+        label: "Testimonials"
+        fields:
+          - { name: "title", label: "Title" }
+          - { name: "subtitle", label: "Subtitle" }
+          - { name: "description", label: "Description", widget: "markdown" }
+          - {
+              name: "items",
+              label: "Testimonials",
+              widget: "list",
+              fields:
+                [
+                  { name: "quote", label: "Quote", widget: "markdown" },
+                  { name: "author", label: "Author" },
+                  { name: "position", label: "Position" },
+                  { name: "image", label: "Image", widget: "image" },
+                ],
+            }
+
+  - name: "footer"
+    label: "Footer"
+    files:
+      - name: "footer"
+        file: "_data/footer.json"
+        label: "Footer"
+        fields:
+          - {
+              name: "about",
+              label: "About",
+              widget: "object",
+              fields:
+                [
+                  { name: "title", label: "Title", widget: "string" },
+                  {
+                    name: "description",
+                    label: "Description",
+                    widget: "markdown",
+                  },
+                ],
+            }
+          - {
+              name: "socials",
+              label: "Social Media Links",
+              widget: "list",
+              fields:
+                [
+                  { name: "icon", label: "Icon Class", widget: "string" },
+                  { name: "url", label: "URL", widget: "string" },
+                ],
+            }
+          - {
+              name: "navigation",
+              label: "Navigation Links",
+              widget: "list",
+              fields:
+                [
+                  { name: "label", label: "Label", widget: "string" },
+                  { name: "link", label: "Link", widget: "string" },
+                ],
+            }
+          - {
+              name: "services",
+              label: "Services Links",
+              widget: "list",
+              fields:
+                [
+                  { name: "label", label: "Label", widget: "string" },
+                  { name: "link", label: "Link", widget: "string" },
+                ],
+            }
+          - {
+              name: "contact",
+              label: "Contact Information",
+              widget: "object",
+              fields:
+                [
+                  { name: "address", label: "Address", widget: "string" },
+                  { name: "phone", label: "Phone", widget: "string" },
+                  { name: "email", label: "Email", widget: "string" },
+                ],
+            }
+          - {
+              name: "footerNote",
+              label: "Footer Note",
+              widget: "object",
+              fields:
+                [
+                  { name: "note", label: "Note", widget: "string" },
+                  { name: "linkText", label: "Link Text", widget: "string" },
+                  { name: "link", label: "Link URL", widget: "string" },
+                ],
+            }
